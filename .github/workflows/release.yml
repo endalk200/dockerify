@@ -112,6 +112,7 @@ jobs:
 
   publish:
     name: Publish
+    permissions: write-all
     needs: [dist]
     runs-on: ubuntu-latest
     steps:
