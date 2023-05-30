@@ -1,10 +1,17 @@
 [package]
 name = "dockerify"
-version = "0.1.0"
+description = "A command line tool to generate Dockerfiles and docker-compose files for your projects"
+version = "0.0.1"
 edition = "2021"
+authors = ["endalk200 <eb808826@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/endalk200/dockerify"
+readme = "README.md"
+keywords = ["docker", "dockerfile", "docker-compose", "cli", "command-line", "tool", "generator", "generator-cli", "generator-tool"]
+categories = ["development-tools", "command-line-utilities"]
+homepage = "https://github.com/endalk200/dockerify"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-serde_json = "1.0.96"
 dialoguer = "0.10.4"
