@@ -227,6 +227,6 @@ jobs:
           profile: minimal
           toolchain: ${{ matrix.rust }}
           target: ${{ matrix.target }}
-      - run: cargo publish --token ${CRATES_TOKEN}
+      - run: cargo publish --token ${CRATES_TOKEN} --allow-dirty
         env:
           CRATES_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
