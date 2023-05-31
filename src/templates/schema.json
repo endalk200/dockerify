@@ -1,0 +1,44 @@
+{
+  "templates": [
+    {
+      "name": "django",
+      "description": "Django docker config templates",
+      "paths": {
+        "dockerfile": "django/Dockerfile",
+        "dockerignore": "django/.dockerignore",
+        "docker-compose-dev": "django/docker-compose-dev.yml",
+        "docker-compose-prod": "django/docker-compose-prod.yml"
+      }
+    },
+    {
+      "name": "nestjs",
+      "description": "Nestjs docker config templates",
+      "paths": {
+        "dockerfile": "nestjs/Dockerfile",
+        "dockerignore": "nestjs/.dockerignore",
+        "docker-compose-dev": "nestjs/docker-compose-dev.yml",
+        "docker-compose-prod": "nestjs/docker-compose-prod.yml"
+      }
+    },
+    {
+      "name": "flask",
+      "description": "Flask docker config templates",
+      "paths": {
+        "dockerfile": "flask/Dockerfile",
+        "dockerignore": "flask/.dockerignore",
+        "docker-compose-dev": "flask/docker-compose-dev.yml",
+        "docker-compose-prod": "flask/docker-compose-prod.yml"
+      }
+    },
+    {
+      "name": "NextJs",
+      "description": "NextJs docker config templates",
+      "paths": {
+        "dockerfile": "nextjs/Dockerfile",
+        "dockerignore": "nextjs/.dockerignore",
+        "docker-compose-dev": "nextjs/docker-compose-dev.yml",
+        "docker-compose-prod": "nextjs/docker-compose-prod.yml"
+      }
+    }
+  ]
+}
