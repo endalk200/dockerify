@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, fs};
 
 use crate::utils;
 
@@ -66,5 +66,21 @@ mod tests {
     #[should_panic(expected = "Placeholder name is not provided")]
     fn test_insert_panics() {
         insert("Hello {{ name }}", &HashMap::new());
+    }
+}
+
+pub fn get_template_content(template_name: &str) -> String {
+    let nestjs_dockerfile: String =
+        include_str!("templates/nestjs/Dockerfile.__template__").to_string();
+
+    let nextjs_dockerfile: String =
+        include_str!("templates/nextjs/Dockerfile.__template__").to_string();
+
+    if template_name == "nestjs" {
+        return nestjs_dockerfile;
+    } else if template_name == "nextjs" {
+        return nextjs_dockerfile;
+    } else {
+        panic!("Template {} is not supported", template_name);
     }
 }
