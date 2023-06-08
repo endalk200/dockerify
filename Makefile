@@ -1,2 +1,2 @@
 update_version:
-	bash ./scripts/update_version.sh $(version)
+	bash ./scripts/update-version.sh $(version)
